@@ -5,6 +5,7 @@ const path = require('path');
 const app = express();
 app.use(cors());
 app.use(express.json());
+
 // Serve frontend static files
 app.use(express.static(path.join(__dirname, '..', 'frontend')));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -183,6 +184,11 @@ app.get('/admin', (req, res) => {
 
 app.get('/admin.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'admin.html'));
+});
+
+// Catch-all: serve frontend index.html for any non-API route
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
