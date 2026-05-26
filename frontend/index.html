@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Scientist Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Profile" class="avatar" />
+      <div>
+        <p class="eyebrow" id="eyebrow">Data Scientist</p>
+        <h1 id="hero-name">Hi, I'm Rachel.</h1>
+        <p class="subtitle" id="hero-subtitle">Extracting insights from data using machine learning and statistical analysis.</p>
+        <a class="button" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p id="about-text">Passionate data scientist with expertise in machine learning, data visualization, and statistical analysis. I transform raw data into actionable insights.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid cards" id="skills-container">
+        <article>
+          <h3>Python & Data</h3>
+          <p>Pandas, NumPy, Scikit-learn, data wrangling and EDA.</p>
+        </article>
+        <article>
+          <h3>Machine Learning</h3>
+          <p>Classification, regression, clustering, deep learning models.</p>
+        </article>
+        <article>
+          <h3>Data Visualization</h3>
+          <p>Matplotlib, Seaborn, Plotly, dashboards and storytelling.</p>
+        </article>
+        <article>
+          <h3>SQL & Databases</h3>
+          <p>Data querying, analysis, and database optimization.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="qualifications">
+      <h2>Qualifications</h2>
+      <ul class="list" id="qualifications-list">
+        <li>Master's degree in Data Science or related field.</li>
+        <li>Experience with machine learning pipelines and model deployment.</li>
+        <li>Strong statistical foundation and problem-solving skills.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="cards" id="projects-container">
+        <article>
+          <h3>Predictive Analytics Model</h3>
+          <p>Built a machine learning model for customer churn prediction with 87% accuracy.</p>
+        </article>
+        <article>
+          <h3>Data Visualization Dashboard</h3>
+          <p>Created an interactive dashboard to monitor KPIs and business metrics in real-time.</p>
+        </article>
+        <article>
+          <h3>NLP Text Classification</h3>
+          <p>Implemented a text classification model for sentiment analysis on customer reviews.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you’d like to connect, send a message using the form below.</p>
+      <form id="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send Message</button>
+        <p id="form-status" class="status"></p>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <span id="contact-email">rachel@example.com</span></p>
+        <p><strong>Location:</strong> <span id="contact-location">Data Science Professional</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Deployed with Vercel (frontend) and Render (backend). <a href="/admin.html">Admin</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
