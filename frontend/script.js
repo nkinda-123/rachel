@@ -1,4 +1,4 @@
-const backendUrl = window.backendUrl || 'http://localhost:3000/api';
+const backendUrl = window.backendUrl || 'https://rachel-portfolio.onrender.com/api';
 const form = document.querySelector('#contact-form');
 const status = document.querySelector('#form-status');
 
